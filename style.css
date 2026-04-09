@@ -1,3 +1,6 @@
+/* ========================================
+   RESET E BASE
+   ======================================== */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +18,9 @@ body {
     display: none !important;
 }
 
-/* NAVEGAÇÃO */
+/* ========================================
+   NAVEGAÇÃO
+   ======================================== */
 .navbar {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 1rem 0;
@@ -57,7 +62,8 @@ body {
     transition: all 0.3s ease;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     background: rgba(255,255,255,0.2);
     transform: translateY(-2px);
 }
@@ -76,46 +82,9 @@ body {
     transition: 0.3s;
 }
 
-/* HERO SECTION */
-.hero {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    padding: 120px 2rem 80px;
-    text-align: center;
-    color: white;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    opacity: 0.3;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.hero-content p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
+/* ========================================
+   BOTÕES GLOBAIS
+   ======================================== */
 .btn {
     padding: 1rem 2rem;
     border: none;
@@ -154,6 +123,87 @@ body {
     font-size: 1.2rem;
 }
 
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: #667eea;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#btnProxima {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnProxima:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 120px 2rem 80px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-buttons a {
+    pointer-events: auto;
+    position: relative;
+    z-index: 10;
+}
+
 .hero-stats {
     display: flex;
     justify-content: center;
@@ -178,7 +228,9 @@ body {
     opacity: 0.8;
 }
 
-/* FEATURES */
+/* ========================================
+   FEATURES SECTION
+   ======================================== */
 .features {
     padding: 80px 2rem;
     max-width: 1200px;
@@ -232,14 +284,41 @@ body {
     display: inline-block;
 }
 
-/* PÁGINA IMC */
-.imc-container {
+/* ========================================
+   CONTAINERES GLOBAIS
+   ======================================== */
+.imc-container,
+.agendamento-container,
+.dicas-container,
+.quiz-container {
     min-height: 100vh;
     padding: 120px 2rem 80px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
+.agendamento-container {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 3rem;
+    max-width: 1400px;
+}
+
+.imc-container {
+    max-width: 800px;
+}
+
+.quiz-container {
+    max-width: 800px;
+}
+
+.dicas-container {
+    max-width: 1200px;
+}
+
+/* ========================================
+   CALCULADORA IMC
+   ======================================== */
 .imc-calculator {
     background: white;
     padding: 3rem;
@@ -264,7 +343,9 @@ body {
     color: #333;
 }
 
-.input-group input, .input-group select, .input-group textarea {
+.input-group input,
+.input-group select,
+.input-group textarea {
     padding: 1rem;
     border: 2px solid #e1e5e9;
     border-radius: 12px;
@@ -272,7 +353,9 @@ body {
     transition: border-color 0.3s ease;
 }
 
-.input-group input:focus, .input-group select:focus, .input-group textarea:focus {
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
     outline: none;
     border-color: #667eea;
 }
@@ -352,23 +435,34 @@ body {
     font-weight: 600;
 }
 
-.tabela-item.magreza { background: #fef3c7; color: #d97706; }
-.tabela-item.normal { background: #d1fae5; color: #065f46; }
-.tabela-item.sobrepeso { background: #fed7aa; color: #c2410c; }
-.tabela-item.obesidade { background: #fecaca; color: #dc2626; }
-.tabela-item.obeso { background: #fecaca; color: #b91c1c; }
-
-/* AGENDAMENTO */
-.agendamento-container {
-    min-height: 100vh;
-    padding: 120px 2rem 80px;
-    display: grid;
-    grid-template-columns: 1fr 350px;
-    gap: 3rem;
-    max-width: 1400px;
-    margin: 0 auto;
+.tabela-item.magreza {
+    background: #fef3c7;
+    color: #d97706;
 }
 
+.tabela-item.normal {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.tabela-item.sobrepeso {
+    background: #fed7aa;
+    color: #c2410c;
+}
+
+.tabela-item.obesidade {
+    background: #fecaca;
+    color: #dc2626;
+}
+
+.tabela-item.obeso {
+    background: #fecaca;
+    color: #b91c1c;
+}
+
+/* ========================================
+   AGENDAMENTO
+   ======================================== */
 .agendamento-form {
     background: white;
     padding: 3rem;
@@ -431,14 +525,9 @@ body {
     border-left: 4px solid #667eea;
 }
 
-/* DICAS */
-.dicas-container {
-    min-height: 100vh;
-    padding: 120px 2rem 80px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+/* ========================================
+   DICAS
+   ======================================== */
 .dicas-header {
     display: flex;
     justify-content: space-between;
@@ -454,6 +543,16 @@ body {
     border-radius: 25px;
     font-size: 1rem;
     background: white;
+}
+
+.dicas-header h1 {
+    font-size: 2rem;
+}
+
+#dicasGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .dica-card {
@@ -501,14 +600,17 @@ body {
     gap: 2rem;
 }
 
-/* QUIZ */
-.quiz-container {
-    min-height: 100vh;
-    padding: 120px 2rem 80px;
-    max-width: 800px;
-    margin: 0 auto;
+.dica-card h3 {
+    margin-bottom: 10px;
 }
 
+.dica-card p {
+    color: #555;
+}
+
+/* ========================================
+   QUIZ
+   ======================================== */
 .quiz-progress {
     background: white;
     padding: 1.5rem;
@@ -532,6 +634,35 @@ body {
     background: linear-gradient(90deg, #667eea, #764ba2);
     width: 0%;
     transition: width 0.5s ease;
+}
+
+.quiz-progress {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+}
+
+#perguntaTexto {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .quiz-pergunta h2 {
@@ -568,6 +699,21 @@ body {
     border-color: #667eea;
 }
 
+.opcao {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px solid #eee;
+    transition: 0.2s;
+}
+
+.opcao:hover {
+    background: #f9f9ff;
+    border-color: #667eea;
+}
+
 .quiz-final {
     text-align: center;
     background: white;
@@ -581,10 +727,21 @@ body {
     margin-bottom: 2rem;
 }
 
-.trofeu.excelente { color: #f59e0b; }
-.trofeu.bom { color: #10b981; }
-.trofeu.medio { color: #f97316; }
-.trofeu.ruim { color: #ef4444; }
+.trofeu.excelente {
+    color: #f59e0b;
+}
+
+.trofeu.bom {
+    color: #10b981;
+}
+
+.trofeu.medio {
+    color: #f97316;
+}
+
+.trofeu.ruim {
+    color: #ef4444;
+}
 
 .acertos-lista {
     background: #f8fafc;
@@ -594,7 +751,36 @@ body {
     text-align: left;
 }
 
-/* FOOTER */
+#acertosLista {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#acertosLista p {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#quizFinal {
+    text-align: center;
+    padding: 20px;
+}
+
+#resultadoFinal {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#pontuacaoTexto {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
 footer {
     background: #1e293b;
     color: white;
@@ -603,7 +789,9 @@ footer {
     margin-top: 4rem;
 }
 
-/* RESPONSIVO */
+/* ========================================
+   RESPONSIVO
+   ======================================== */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -629,7 +817,7 @@ footer {
         font-size: 2.5rem;
     }
     
-        .hero-buttons {
+    .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
@@ -666,6 +854,12 @@ footer {
     .tabela-grid {
         grid-template-columns: 1fr;
     }
+    
+    .dicas-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
 }
 
 @media (max-width: 480px) {
@@ -673,205 +867,24 @@ footer {
         font-size: 2rem;
     }
     
-    .imc-calculator, .agendamento-form {
+    .imc-calculator,
+    .agendamento-form {
         padding: 2rem 1.5rem;
     }
     
     .btn-large {
         width: 100%;
     }
-}
-
-/* ================= QUIZ GERAL ================= */
-.quiz-container {
-    max-width: 700px;
-    margin: 60px auto;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* ================= PROGRESSO ================= */
-.quiz-progress {
-    background: #f1f1f1;
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.progress-bar {
-    width: 100%;
-    height: 10px;
-    background: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-
-.progress-fill {
-    height: 100%;
-    width: 0%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    transition: width 0.3s ease;
-}
-
-/* ================= PERGUNTA ================= */
-#perguntaTexto {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-/* ================= OPÇÕES ================= */
-.opcao {
-    background: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 12px;
-    cursor: pointer;
-    border: 2px solid #eee;
-    transition: 0.2s;
-}
-
-.opcao:hover {
-    background: #f9f9ff;
-    border-color: #667eea;
-}
-
-.opcao.selecionada {
-    background: #667eea;
-    color: white;
-    border-color: #667eea;
-}
-
-/* ================= BOTÃO PRÓXIMA ================= */
-#btnProxima {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#btnProxima:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-
-/* ================= RESULTADO ================= */
-#quizFinal {
-    text-align: center;
-    padding: 20px;
-}
-
-#resultadoFinal {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-#pontuacaoTexto {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-/* lista de acertos */
-#acertosLista {
-    text-align: left;
-    margin-top: 20px;
-}
-
-#acertosLista p {
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-/* ================= BOTÃO ================= */
-button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    background: #667eea;
-    color: white;
-    transition: 0.3s;
-}
-
-button:hover {
-    opacity: 0.9;
-}
-
-/* ================= UTIL ================= */
-.hidden {
-    display: none;
-}
-.hero-buttons {
-    position: relative;
-    z-index: 10;
-}
-
-.hero-buttons a {
-    pointer-events: auto;
-    position: relative;
-    z-index: 10;
-}
-/* ================= DICAS ================= */
-
-.dicas-container {
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 20px;
-}
-
-.dicas-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.dicas-header h1 {
-    font-size: 2rem;
-}
-
-/* GRID DAS DICAS */
-#dicasGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-/* CARD */
-.dica-card {
-    background: white;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.dica-card:hover {
-    transform: translateY(-5px);
-}
-
-/* TEXTO */
-.dica-card h3 {
-    margin-bottom: 10px;
-}
-
-.dica-card p {
-    color: #555;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    .dicas-header {
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-start;
+    
+    .quiz-container {
+        max-width: 700px;
+        margin: 60px auto;
+        padding: 20px;
+    }
+    
+    .dicas-container {
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 20px;
     }
 }
