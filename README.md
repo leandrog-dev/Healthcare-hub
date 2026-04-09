@@ -34,10 +34,6 @@ O projeto foi desenvolvido com foco em uma navegação simples, interface intuit
 
 ---
 
-## 🌐 Acesse o projeto
-
-(Coloque aqui o link do GitHub Pages depois que ativar)
-
 ---
 
 ## 📚 Aprendizados
@@ -47,10 +43,14 @@ Durante o desenvolvimento deste projeto, foram aplicados conceitos como:
 - Estruturação de páginas web
 - Estilização com CSS
 - Manipulação de DOM com JavaScript
-- Organização de código
+
 
 ---
 
-## 📄 Licença
 
-Este projeto foi desenvolvido para fins acadêmicos.
+
+## 📌 Observação
+
+Este projeto foi desenvolvido para fins acadêmicos, seguindo os requisitos estabelecidos durante o curso.
+
+O foco esteve na aplicação de conceitos fundamentais de desenvolvimento Front-end, utilizando HTML, CSS e JavaScript, como base para evolução futura com tecnologias mais avançadas.
