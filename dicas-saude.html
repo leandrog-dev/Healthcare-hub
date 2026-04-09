@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas de Saúde - HealthCare Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">🏥 HealthCare Hub</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">🏠 Início</a></li>
+                    <li><a href="calculadora-imc.html" class="nav-link">📊 IMC</a></li>
+                    <li><a href="agendamento.html" class="nav-link">📅 Agendar</a></li>
+                    <li><a href="dicas-saude.html" class="nav-link active">💡 Dicas</a></li>
+                    <li><a href="quiz-saude.html" class="nav-link">❓ Quiz</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dicas-container">
+        <div class="dicas-header">
+            <h1>Dicas Personalizadas de Saúde</h1>
+            <div class="filtro-dicas">
+                <select id="filtroIdade">
+                    <option value="todas">Todas as idades</option>
+                    <option value="crianca">Criança (0-12)</option>
+                    <option value="adolescente">Adolescente (13-17)</option>
+                    <option value="adulto">Adulto (18-59)</option>
+                    <option value="idoso">Idoso (60+)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="dicas-grid" id="dicasGrid">
+            <!-- Dicas serão carregadas via JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 HealthCare Hub. Desenvolvido por: Leandro Gabriel</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
