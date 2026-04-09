@@ -51,6 +51,5 @@ Durante o desenvolvimento deste projeto, foram aplicados conceitos como:
 
 ## 📌 Observação
 
-Este projeto foi desenvolvido para fins acadêmicos, seguindo os requisitos estabelecidos durante o curso.
-
+Este projeto é simples pelo fato de ter sido requisitado dessa forma para fins acadêmicos.
 O foco esteve na aplicação de conceitos fundamentais de desenvolvimento Front-end, utilizando HTML, CSS e JavaScript, como base para evolução futura com tecnologias mais avançadas.
