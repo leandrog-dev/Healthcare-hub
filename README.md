@@ -4,7 +4,7 @@ Aplicação web desenvolvida como projeto acadêmico com foco em saúde e bem-es
 
 ---
 
-## 📌 Sobre o projeto
+##  Sobre o projeto
 
 O HealthCare Hub é uma aplicação web criada para auxiliar usuários no cuidado com a saúde, oferecendo funcionalidades como:
 
@@ -17,7 +17,7 @@ O projeto foi desenvolvido com foco em uma navegação simples, interface intuit
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="35" />
@@ -27,7 +27,7 @@ O projeto foi desenvolvido com foco em uma navegação simples, interface intuit
 
 ---
 
-## ▶️ Como executar o projeto
+##  Como executar o projeto
 
 1. Baixe ou clone este repositório
 2. Abra o arquivo `index.html` no navegador
@@ -36,7 +36,7 @@ O projeto foi desenvolvido com foco em uma navegação simples, interface intuit
 
 ---
 
-## 📚 Aprendizados
+##  Aprendizados
 
 Durante o desenvolvimento deste projeto, foram aplicados conceitos como:
 
@@ -49,7 +49,7 @@ Durante o desenvolvimento deste projeto, foram aplicados conceitos como:
 
 
 
-## 📌 Observação
+##  Observação
 
 Este projeto é simples pelo fato de ter sido requisitado dessa forma para fins acadêmicos.
 O foco esteve na aplicação de conceitos fundamentais de desenvolvimento Front-end, utilizando HTML, CSS e JavaScript, como base para evolução futura com tecnologias mais avançadas.
